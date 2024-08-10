@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Gabriel Ayilef</div>
+      <div class="name">Gabriel Ayilef</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -20,7 +20,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Gabriel Ayilef</div>
+      <div class="name">Gabriel Ayilef</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -29,13 +29,14 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section-profilepic-container">
         <img src="./assets/pic.jpg" alt="Gabriel profile picture" />
       </div>
       <div class="section__text">
@@ -72,8 +73,8 @@
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container2">
+      <div class="section-about-container">
+        <div class="section-aboutpic-container">
           <img
             src="./assets/about.jpg"
             alt="about picture"
@@ -173,12 +174,11 @@
           </div>
           <div class="text-container">
             <p>
-              In this transition from the wellness scene to the digital world, I bring with me a skill 
-              package ready to unfold in new experiences for diverse users. Creativity materializes 
-              through visual innovation. Attention to detail focuses
-               on the precise design of user interfaces. Adaptability translates into the integration
-                of emerging technologies. Discipline is reflected in code consistency and a commitment
-                 to continuous improvement. Ready for this new chapter in frontend development. 
+              I am a junior developer transitioning from the wellness scene to the digital world. 
+              I bring with me a skill package ready to unfold in new experiences for diverse users.
+               Now attention to detail and creativity focuses on the precise design of user interfaces.
+                Adaptability translates into the integration of emerging technologies. Discipline is 
+                reflected in code consistency and a commitment to continuous improvement. 
             </p>
           </div>
         </div>
@@ -192,46 +192,43 @@
     </section>
     
     <section id="projects">
-      <h1 class="title">Project</h1>
+      <h1 class="title">Yoga App Project</h1>
       <div class="project-container">
-        <div class="project-details color-container">
+        <div class="project-details-container">
           <div class="photo-project">
-            <img
-            src="./assets/project1.jpg"
-            alt="Project 1"
-            class="project-img"
-          />
-          <img
-          src="./assets/blanco.PNG"
-          alt="Overlay Image"
-          class="project-overlay"
-        />
-        <div class="project-text-overlay">
-          This<br>
-          <span>Yoga App</span> <br>
-          is a
-          <br>
-          <span>multifaceted project</span>
-          <br>
-          built with <span>React.js</span>
-        </div>
+                  <img
+                  src="./assets/project1.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <img
+                src="./assets/blanco.PNG"
+                alt="Overlay Image"
+                class="project-overlay"
+              />
+              <div class="project-text-overlay">
+                A
+                <br>
+                <span>multifaceted project</span>
+                <br>
+                built with <span>React.js</span>
+              </div>
           </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Elmapucheco'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://yogagabrielapp.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
           
-          <h2 class="experience-sub-title project-title">Yoga App</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Elmapucheco'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://yogagabrielapp.netlify.app'"
-            >
-              Live Demo
-            </button>
-          </div>
         </div>
       </div>
       <img
