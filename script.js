@@ -1,8 +1,15 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
+  const hamburger = document.querySelector(".hamburger-icon");
+  const close = document.querySelector(".close-icon");
   menu.classList.toggle("open");
-  icon.classList.toggle("open");
+  if (menu.classList.contains("open")) {
+    hamburger.style.display = "none";
+    close.style.display = "inline";
+  } else {
+    hamburger.style.display = "inline";
+    close.style.display = "none";
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -13,19 +20,47 @@ document.addEventListener("DOMContentLoaded", function () {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Añadir la clase de animación cuando el overlay entra en el viewport
             projectOverlay.classList.add("animate");
           } else {
-            // Eliminar la clase de animación cuando el overlay sale del viewport
             projectOverlay.classList.remove("animate");
           }
         });
       },
       {
-        threshold: [0], // Ajusta el umbral si es necesario
+        threshold: [0.5],
       }
     );
 
     observer.observe(projectOverlay);
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const animatedText = document.querySelector(".animated-text");
+
+  if (animatedText) {
+    const spans = animatedText.querySelectorAll("span");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            spans.forEach((span, index) => {
+              span.style.opacity = 0;
+              setTimeout(() => {
+                span.style.opacity = 1;
+              }, index * 500);
+            });
+          } else {
+            spans.forEach((span) => {
+              span.style.opacity = 0;
+            });
+          }
+        });
+      },
+      {
+        threshold: [0.5],
+      }
+    );
+
+    observer.observe(animatedText);
   }
 });
