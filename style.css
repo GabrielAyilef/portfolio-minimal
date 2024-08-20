@@ -168,6 +168,7 @@ p {
 
 .btn-cv {
   background: none;
+  color: black;
 }
 
 .btn-cv:hover {
@@ -275,9 +276,9 @@ article p{
   border-radius: 2rem;
   text-align: center;
   height: 70vh;
-  display: flex; /* Añadido */
-  align-items: center; /* Añadido para centrar verticalmente */
-  justify-content: center; /* Añadido para centrar horizontalmente */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 
 .project-img {
@@ -345,6 +346,7 @@ article p{
 .btn-project{
   background: white;
   cursor: pointer;
+  color: black;
 }
 .btn-project:hover {
   background: rgb(53, 53, 53);
