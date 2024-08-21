@@ -505,49 +505,21 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  #project{
-    margin-inline: 0;
-  }
-  article {
-    font-size: 1rem;
+  .name {
+    font-size: 1.5rem;
   }
   .hamburger-icon,
   .close-icon{
     width: 25px;
   }
+  
   .menu-links{
     right: 5%;
     top:15%
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
- 
-  .name {
-    font-size: 1.5rem;
-  }
-  footer .nav-links {
-    display: block;
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
   }
   .profile-pic{
     width: 220px;
@@ -555,14 +527,34 @@ footer p {
     justify-content: center;
     
     }
-  .about-pic {
-      min-width: 100px;
-      width: 50%;
-      height: auto;
-      justify-content: center;
-      }
+  .title {
+      font-size: 2rem;
+    }
+ 
   .subtitle {  
-    font-size: 1.25rem;
+      font-size: 1.25rem;
+    }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .about-pic {
+    min-width: 100px;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    }
+  article {
+    font-size: 1rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  #project{
+    margin-inline: 0;
+    height: 80vh;
+    min-height: 90vh;
   }
   .project-details{
     height: 50vh;
@@ -579,10 +571,32 @@ footer p {
   .animated-text{
     font-size: 1.15rem;
   }
-  .title {
-    font-size: 2rem;
+  #contact{
+    height: fit-content;
+    min-height: 60vh;
   }
-  .text-container {
-    text-align: justify;
+  .contact-info-container {
+    margin: 0;
   }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+ 
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+ 
+ 
+  footer .nav-links {
+    display: block;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+ 
+
+ 
+  
 }
