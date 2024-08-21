@@ -64,6 +64,8 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgba(129, 125, 125, 0.1);
 }
 
 .menu-links a {
@@ -516,6 +518,13 @@ footer p {
   }
   article {
     font-size: 1rem;
+  }
+  .hamburger-icon,
+  .close-icon{
+    width: 20px;
+  }
+  .menu-links{
+    right: 5%;
   }
   footer nav {
     height: fit-content;
