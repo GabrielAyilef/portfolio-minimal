@@ -574,8 +574,8 @@ footer p {
     font-size: 1.15rem;
   }
   #contact{
-    height: fit-content;
-    min-height: 60vh;
+    
+    min-height: 75vh;
   }
   .contact-info-container {
     margin: 0;
