@@ -553,8 +553,8 @@ footer p {
   }
   #project{
     margin-inline: 0;
-    height: 80vh;
-    min-height: 90vh;
+    padding-top: 5rem;
+    min-height: 70vh;
   }
   .project-details{
     height: 50vh;
