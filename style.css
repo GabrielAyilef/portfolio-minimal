@@ -505,10 +505,6 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-  /* #contact,
-  footer {
-    height: 40vh;
-  } */
   #profile {
     height: 83vh;
     margin-bottom: 0;
@@ -521,10 +517,11 @@ footer p {
   }
   .hamburger-icon,
   .close-icon{
-    width: 20px;
+    width: 25px;
   }
   .menu-links{
     right: 5%;
+    top:15%
   }
   footer nav {
     height: fit-content;
