@@ -42,19 +42,72 @@ a:hover {
 .hamburger-nav{
   display: none;
 }
-.hamburger-menu {
+
+
+
+
+
+.burger-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  height: 4rem;
+  justify-content: center;
+} 
+
+.burger-4 .bar {
+  display: block;
   position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.burger-4 .bar span {
+  position: absolute;
+  width: 40px;
+  height: 5.5px;
+  background: var(--primary);
+  border-radius: 100px;
   display: inline-block;
+  transition: 0.3s ease;
+  left: 0;
+  background-color: black;
+  
 }
-.hamburger-icon{
-  width: 30px;
-  cursor: pointer;
+
+.burger-4 .bar span.top {
+  top: 0;
 }
-.close-icon{
-  display: none;
-  width: 30px;
-  cursor: pointer;
+
+.burger-4 .bar span.middle {
+  top: 15px;
 }
+
+.burger-4 .bar span.bottom {
+  bottom: 4px;
+}
+
+.burger-4.open .top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 48px;
+  left: 5px;
+}
+
+.burger-4.open .bottom {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 48px;
+  bottom: -1px;
+}
+
+.burger-4.open .middle {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
 .menu-links {
   position: absolute;
   top: 10%;
@@ -67,6 +120,12 @@ a:hover {
   border-radius: 5px;
   box-shadow: 1px 1px 4px rgba(129, 125, 125, 0.1);
 }
+
+.menu-links.open {
+  max-height: 200px; 
+}
+
+
 
 .menu-links a {
   display: block;
@@ -515,8 +574,7 @@ footer p {
   .name {
     font-size: 1.5rem;
   }
-  .hamburger-icon,
-  .close-icon{
+  .burger-wrapper{
     width: 25px;
   }
   
