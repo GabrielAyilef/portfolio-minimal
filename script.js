@@ -13,7 +13,7 @@
 // }
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
-  const burger = document.querySelector(".burger-4");
+  const burger = document.querySelector(".burger");
 
   menu.classList.toggle("open");
   burger.classList.toggle("open");

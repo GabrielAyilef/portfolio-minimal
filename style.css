@@ -56,7 +56,7 @@ a:hover {
   justify-content: center;
 } 
 
-.burger-4 .bar {
+.burger .bar {
   display: block;
   position: relative;
   cursor: pointer;
@@ -64,7 +64,7 @@ a:hover {
   height: 40px;
 }
 
-.burger-4 .bar span {
+.burger .bar span {
   position: absolute;
   width: 40px;
   height: 5px;
@@ -76,26 +76,26 @@ a:hover {
   
 }
 
-.burger-4 .bar span.top {
+.burger .bar span.top {
   top: 0;
 }
 
-.burger-4 .bar span.middle {
+.burger .bar span.middle {
   top: 15px;
 }
 
-.burger-4 .bar span.bottom {
+.burger .bar span.bottom {
   bottom: 4px;
 }
 
-.burger-4.open .top {
+.burger.open .top {
   transform: rotate(45deg);
   transform-origin: top left;
   width: 45px;
   left: 5px;
 }
 
-.burger-4.open .bottom {
+.burger.open .bottom {
   transform: rotate(-45deg);
   transform-origin: top left;
   width: 45px;
@@ -104,7 +104,7 @@ a:hover {
   bottom: -1px;
 }
 
-.burger-4.open .middle {
+.burger.open .middle {
   transform: translateX(-20px);
   opacity: 0;
 }
@@ -575,11 +575,11 @@ footer p {
   .name {
     font-size: 1.5rem;
   }
-  .burger-4 .bar{
+  .burger .bar{
     width: 35px;
     height: 35px;
   }
-  .burger-4 .bar span{
+  .burger .bar span{
     width: 35px;
     height: 4px;
   }
@@ -587,14 +587,14 @@ footer p {
     gap: 0.2rem;
     height: 2rem;
   }
-  .burger-4 .bar span.middle{
+  .burger .bar span.middle{
     top: 13px;
   }
-  .burger-4.open .top,
-  .burger-4.open .bottom{
+  .burger.open .top,
+  .burger.open .bottom{
     width: 40px;
   }
-  .burger-4.open .top{
+  .burger.open .top{
     left: 2px;
   }
   .menu-links{
