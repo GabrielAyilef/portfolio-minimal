@@ -67,8 +67,7 @@ a:hover {
 .burger-4 .bar span {
   position: absolute;
   width: 40px;
-  height: 5.5px;
-  background: var(--primary);
+  height: 5px;
   border-radius: 100px;
   display: inline-block;
   transition: 0.3s ease;
@@ -92,14 +91,16 @@ a:hover {
 .burger-4.open .top {
   transform: rotate(45deg);
   transform-origin: top left;
-  width: 48px;
+  width: 45px;
   left: 5px;
 }
 
 .burger-4.open .bottom {
   transform: rotate(-45deg);
   transform-origin: top left;
-  width: 48px;
+  width: 45px;
+  
+
   bottom: -1px;
 }
 
@@ -574,10 +575,28 @@ footer p {
   .name {
     font-size: 1.5rem;
   }
-  .burger-wrapper{
-    width: 25px;
+  .burger-4 .bar{
+    width: 35px;
+    height: 35px;
   }
-  
+  .burger-4 .bar span{
+    width: 35px;
+    height: 4px;
+  }
+  .burger-wrapper{
+    gap: 0.2rem;
+    height: 2rem;
+  }
+  .burger-4 .bar span.middle{
+    top: 13px;
+  }
+  .burger-4.open .top,
+  .burger-4.open .bottom{
+    width: 40px;
+  }
+  .burger-4.open .top{
+    left: 2px;
+  }
   .menu-links{
     right: 5%;
     top:15%
