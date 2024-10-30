@@ -320,7 +320,7 @@ article h3{
 
 }
 article p{
-  font-size: clamp(0.6rem, 0.8vw, 0.8rem)
+  font-size: clamp(0.8rem, 0.8vw, 0.8rem)
 }
 
 .text-container{
