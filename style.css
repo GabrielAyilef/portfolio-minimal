@@ -273,13 +273,12 @@ p {
   justify-content: center;
   flex-direction: column;
   display: flex;
+  gap: 1rem;
 
 }
 .about-containers{
   display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+ 
 }
 .details{
   padding: 1.5rem;
