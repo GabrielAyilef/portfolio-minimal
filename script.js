@@ -1,16 +1,3 @@
-// function toggleMenu() {
-//   const menu = document.querySelector(".menu-links");
-//   const hamburger = document.querySelector(".hamburger-icon");
-//   const close = document.querySelector(".close-icon");
-//   menu.classList.toggle("open");
-//   if (menu.classList.contains("open")) {
-//     hamburger.style.display = "none";
-//     close.style.display = "inline";
-//   } else {
-//     hamburger.style.display = "inline";
-//     close.style.display = "none";
-//   }
-// }
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const burger = document.querySelector(".burger");
