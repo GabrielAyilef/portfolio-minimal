@@ -278,7 +278,7 @@ p {
 }
 .about-containers{
   display: flex;
- 
+  gap: 1rem;
 }
 .details{
   padding: 1.5rem;
