@@ -669,7 +669,7 @@ article p{
     height: fit-content;
     margin-bottom: 2rem;
   }
- .footer .nav-links {
+ .footer .nav-links ul{
     display: block;
     flex-direction: column;
     gap: 0.5rem;
