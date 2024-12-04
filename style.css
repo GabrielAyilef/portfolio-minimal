@@ -470,12 +470,10 @@ article p{
 
 footer {
   height: 26vh;
-  margin: 0 1rem ;
+  margin: 0 1rem 50px;
 }
 
-footer p {
-  text-align: center;
-}
+
 
 @media (max-width: 1600px) {
   .about-containers {
@@ -664,6 +662,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    margin-bottom: ;
   }
   footer nav {
     height: fit-content;
