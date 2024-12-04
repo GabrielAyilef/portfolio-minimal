@@ -660,16 +660,16 @@ article p{
   .nav-links li a {
     font-size: 1rem;
   }
-  .footer{
+  footer{
     display: flex;
     flex-direction: column;
     justify-content: end;
   }
-  .footer nav {
+  footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
- .footer .nav-links ul{
+ footer .nav-links ul{
     display: block;
     flex-direction: column;
     gap: 0.5rem;
